@@ -21,7 +21,7 @@ using System.Windows;
 //请将此类型的 ComVisible 特性设置为 true。
 [assembly: ComVisible(false)]
 
-//若要开始生成可本地化的应用程序，请设置
+//若要开始第1个人生成可本地化的应用程序，请设置
 //.csproj 文件中的 <UICulture>CultureYouAreCodingWith</UICulture>
 //例如，如果您在源文件中使用的是美国英语，
 //使用的是美国英语，请将 <UICulture> 设置为 en-US。  然后取消

@@ -101,7 +101,7 @@ namespace RNumWPFNew
             }
             Counter = 1;
             snakeBar.MessageQueue.Enqueue("已设置名字");
-            ButtonStartStop.Content = "开始";
+            ButtonStartStop.Content = "开始第1个人";
         }
 
         int LastID = 0;

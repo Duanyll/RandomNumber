@@ -5,11 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:RNumWPFNew"
              mc:Ignorable="d" 
-             d:DesignHeight="40" d:DesignWidth="110" Width="110" MinWidth="100" Height="40" MinHeight="30">
+             d:DesignHeight="40" d:DesignWidth="110" Width="150" MinWidth="100" Height="60" MinHeight="30">
     <Border x:Name="border" BorderThickness="1" CornerRadius="15" Margin="5">
         <Border.Background>
             <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
         </Border.Background>
-        <TextBlock x:Name="TextBlockName" TextWrapping="Wrap" Text="未命名" TextAlignment="Center" Width="100" Height="30" MinHeight="30" MinWidth="100" FontSize="16"/>
+        <TextBlock x:Name="TextBlockName" TextWrapping="Wrap" Text="未命名" TextAlignment="Center" Width="120" Height="30" MinHeight="30" MinWidth="100" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="9"/>
     </Border>
 </UserControl>
