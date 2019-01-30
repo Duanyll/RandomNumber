@@ -18,17 +18,29 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <ScrollViewer x:Name="SViewer1" Grid.Row="1" VerticalScrollBarVisibility="Hidden">
-                <WrapPanel x:Name="WrapPanelName" Background="{DynamicResource PrimaryHueDarkForegroundBrush}">
+                <WrapPanel x:Name="WrapPanelName">
+                    <WrapPanel.Background>
+                        <ImageBrush ImageSource="timg.jpg" Stretch="UniformToFill" Opacity="0.6"/>
+                    </WrapPanel.Background>
                     <WrapPanel.Effect>
                         <DropShadowEffect Direction="90"/>
                     </WrapPanel.Effect>
                 </WrapPanel>
             </ScrollViewer>
             <Button Style="{DynamicResource MaterialDesignRaisedLightButton}" x:Name="ButtonStartStop" Margin="0,10,10,10" Click="ButtonStartStop_Click" FontSize="48" IsDefault="True" BorderBrush="{x:Null}" Content="开始第1个人" Height="Auto" HorizontalAlignment="Right" Width="320"/>
-            <TextBlock x:Name="TextBlockName" Style="{DynamicResource MaterialDesignTitleTextBlock}" Margin="10,15,0,14" TextWrapping="Wrap" Text="杨大为" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="72"/>
+            <TextBlock x:Name="TextBlockName" Style="{DynamicResource MaterialDesignTitleTextBlock}" Margin="10,15,0,14" TextWrapping="Wrap" Text="抽奖机" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="72"/>
             <materialDesign:Snackbar x:Name="snakeBar" MessageQueue="{materialDesign:MessageQueue}" Margin="226,0,278,0" Grid.Row="1" />
-            <Button x:Name="ButtonOpenFile" Style="{DynamicResource MaterialDesignFloatingActionAccentButton}" Content="设置" Margin="0,0,20,20" Grid.Row="1" Height="50" HorizontalAlignment="Right" Width="50" VerticalAlignment="Bottom" Click="ButtonOpenFile_Click"/>
+            <Button x:Name="ButtonOpenFile" Style="{DynamicResource MaterialDesignFloatingActionAccentButton}" Content="打开" Margin="0,0,20,20" Grid.Row="1" Height="50" HorizontalAlignment="Right" Width="50" VerticalAlignment="Bottom" Click="ButtonOpenFile_Click"/>
             <Button x:Name="ButtonClear" Style="{DynamicResource MaterialDesignFloatingActionAccentButton}" Content="清除" Margin="0,0,20,80" Grid.Row="1" Height="50" HorizontalAlignment="Right" Width="50" VerticalAlignment="Bottom" Click="ButtonClear_Click_1"/>
+            <Button x:Name="ButtonClearCounter" Style="{StaticResource MaterialDesignFlatButton}" Content="清除计数" Margin="0,10,334.6,0" Height="50" HorizontalAlignment="Right" Width="110" Click="ButtonClearCounter_Click" VerticalAlignment="Top"/>
+            <Button
+  Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+  ToolTip="MaterialDesignFloatingActionAccentButton" Margin="10,0,0,10" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="ButtonStartStop_Click">
+                <materialDesign:PackIcon
+    Kind="Play"
+    Height="24"
+    Width="24" />
+            </Button>
         </Grid>
     </Grid>
 </Window>

@@ -151,5 +151,12 @@ namespace RNumWPFNew
         {
             RefreshNames();
         }
+
+        private void ButtonClearCounter_Click(object sender, RoutedEventArgs e)
+        {
+            Counter = 1;
+            snakeBar.MessageQueue.Enqueue("已重置计数器");
+            ButtonStartStop.Content = "开始第1个人";
+        }
     }
 }
