@@ -1,13 +1,13 @@
 ﻿<Window
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:RNumWPFNew"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="RNumWPFNew.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="RNumWPFNew.MainWindow"
         Background="{DynamicResource MaterialDesignPaper}"
         mc:Ignorable="d"
-        Title="点名器" Height="450" Width="800" Foreground="{x:Null}" Loaded="Window_Loaded" FontFamily="DengXian">
+        Title="点名器" Height="450" Width="800" Foreground="{x:Null}" Loaded="Window_Loaded" FontFamily="DengXian" Icon="校园抽奖.ico">
     <Grid Width="{Binding Width, ElementName=w}" Height="{Binding Height, ElementName=w}">
         <Grid>
             <Grid.RowDefinitions>
@@ -20,11 +20,8 @@
             <ScrollViewer x:Name="SViewer1" Grid.Row="1" VerticalScrollBarVisibility="Hidden">
                 <WrapPanel x:Name="WrapPanelName">
                     <WrapPanel.Background>
-                        <ImageBrush ImageSource="timg.jpg" Stretch="UniformToFill" Opacity="0.6"/>
+                        <SolidColorBrush Color="{StaticResource Primary100}"></SolidColorBrush>
                     </WrapPanel.Background>
-                    <WrapPanel.Effect>
-                        <DropShadowEffect Direction="90"/>
-                    </WrapPanel.Effect>
                 </WrapPanel>
             </ScrollViewer>
             <Button Style="{DynamicResource MaterialDesignRaisedLightButton}" x:Name="ButtonStartStop" Margin="0,10,10,10" Click="ButtonStartStop_Click" FontSize="48" IsDefault="True" BorderBrush="{x:Null}" Content="开始第1个人" Height="Auto" HorizontalAlignment="Right" Width="320"/>
